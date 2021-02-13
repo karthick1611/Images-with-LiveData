@@ -21,7 +21,7 @@ object RestClient {
             .readTimeout(45, TimeUnit.SECONDS)
             .addInterceptor { chain ->
                 val request = chain.request().newBuilder()
-                    .addHeader("Authorization", "563492ad6f91700001000001a908a3ee509745d2b2173db3806f76f6")
+                    .addHeader("Authorization", "YOUR API KEY")
                     .addHeader("Content-Type", "application/json")
                     .build()
                 chain.proceed(request)
